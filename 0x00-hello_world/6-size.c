@@ -1,5 +1,8 @@
 #include<stdio.h>
-/* The main function*/
+/**
+ * main - A program that print a line using the ptint function
+ * Return: 0 (Success)
+ */
 int main(void)
 {
 int i;
@@ -9,14 +12,14 @@ double d;
 char c;
 long l;
 printf(
-		"Size of char: %zu bytes\n", sizeof(c));
+		"Size of char: %zu byte(s)\n", sizeof(c));
 printf(
-		"Size of int: %zu bytes\n", sizeof(i));
+		"Size of int: %zu byte(s)\n", sizeof(i));
 printf(
-		"Size of long int: %zu bytes\n", sizeof(ui));
+		"Size of long int: %zu byte(s)\n", sizeof(ui));
 printf(
-		"Size of long long int: %zu byte\n", sizeof(d));
+		"Size of long long int: %zu byte(s)\n", sizeof(d));
 printf(
-		"Size of float: %zu byte\n", sizeof(f));
+		"Size of float: %zu byte(s)\n", sizeof(f));
 return (0);
 }
