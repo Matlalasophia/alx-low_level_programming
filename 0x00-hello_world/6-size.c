@@ -12,7 +12,7 @@ double d;
 char c;
 long l;
 printf(
-		"Size of char a: %zu byte(s)\n", sizeof(c));
+		"Size of a char: %zu byte(s)\n", sizeof(c));
 printf(
 		"Size of an int: %zu byte(s)\n", sizeof(i));
 printf(
