@@ -12,12 +12,15 @@ for (a = 48; a <= 56; a++)
 a = a;
 for (b = 49; b <= 57; b++)
 {
+if (a != b || b != a )
+{
 putchar(a);
 putchar(b);
 if (a != 56 || b != 57)
 {
 putchar(44);
 putchar(' ');
+}
 }
 }
 }
