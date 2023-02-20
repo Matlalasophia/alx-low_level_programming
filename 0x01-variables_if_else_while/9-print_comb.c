@@ -5,16 +5,22 @@
  */
 int main(void)
 {
-int a;
-for (a = 0; a < 10; a++)
+char a;
+char b;
+for (a = 48; a <= 57; a++)
 {
-putchar(a + '0');
-if (a < 9)
-{
-putchar(',');
-putchar(' ');
+      a=a;
+
+for (b = 48; b <= 57; b++)
+	{
+	putchar(a);
+	putchar(b);
+	if(a != 57 || b != 57){
+	putchar(44);
+	}
 }
 }
+
 putchar('\n');
 return (0);
 }
