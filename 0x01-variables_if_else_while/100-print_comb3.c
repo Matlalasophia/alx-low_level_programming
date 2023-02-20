@@ -14,10 +14,10 @@ for (b = 49; b <= 57; b++)
 {
 putchar(a);
 putchar(b);
-putchar(' ');
 if (a != 57 || b != 57)
 {
 putchar( 44);
+putchar(' ');
 }
 }
 }
