@@ -1,19 +1,23 @@
 #include<stdio.h>
 /**
- * main - prints different combination of two digits
+ * main - prints alphabetic in lowercase
  * Return:0
  */
 int main(void)
 {
-int a=a+'0';
-for (a = 1; a < 100; a++)
-{ 
-putchar(a);
-if (a < 99)
-
+char a;
+char b;
+for (a = 48; a <= 57; a++)
 {
-putchar(',');
-putchar(' ');
+a = a;
+for (b = 48; b <= 57; b++)
+{
+putchar(a);
+putchar(b);
+if (a != 57 || b != 57)
+{
+putchar(44);
+}
 }
 }
 putchar('\n');
