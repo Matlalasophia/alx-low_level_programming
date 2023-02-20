@@ -7,12 +7,13 @@ int main(void)
 {
 int a;
 int b;
-for (a = 48; a <= 56; a++)
+for (a = 48; a <= 57; a++)
 {
-a = a;
-for (b = 49; b <= 57; b++)
+for (b = 48; b <= 57; b++)
 {
-if (a != b || b != a )
+if (a != b || b != a || b > a)
+{
+if (b > a)
 {
 putchar(a);
 putchar(b);
@@ -20,6 +21,7 @@ if (a != 56 || b != 57)
 {
 putchar(44);
 putchar(' ');
+}
 }
 }
 }
