@@ -5,8 +5,8 @@
  */
 int main(void)
 {
-char a;
-char b;
+int a;
+int b;
 for (a = 48; a <= 57; a++)
 {
 a = a;
