@@ -11,7 +11,7 @@ for (a = 48; a <= 57; a++)
 {
 for (b = 48; b <= 57; b++)
 {
-if (a != b || b != a || b > a)
+if (a != b || b != a )
 {
 if (b > a)
 {
