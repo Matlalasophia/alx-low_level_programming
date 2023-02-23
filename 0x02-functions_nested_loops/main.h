@@ -1,17 +1,9 @@
-#idndef main_h
-#define main_h
-
-int _putchar(char);
-void print_alphabet(void);
-void print_alphabet_x10(void);
-int _is lower(int c);
-int print_isalpha(int c);
-int print_sign(int n);
-int _abs(int);
-int print_last_digit(int);
-void jack_bauer(void);
-void times_table(void);
-int add(int,int);
-int add(int, int);
-
-#endif
+#include<stdio.h>
+char putcharMethod(char strArr[], int arrL)
+{
+int x;
+for (x = 0; x <= arrL; x++)
+{
+putchar(strArr[x]);
+}
+}
