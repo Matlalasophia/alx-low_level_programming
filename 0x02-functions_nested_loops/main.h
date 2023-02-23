@@ -2,7 +2,7 @@
 char putcharMethod(char strArr[], int arrL)
 {
 int x;
-for (x = 0; x <= arrL; x++)
+for (x = 1; x <= arrL; x++)
 {
 putchar(strArr[x]);
 }
