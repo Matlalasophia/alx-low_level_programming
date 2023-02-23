@@ -6,4 +6,5 @@ for (x = 0; x <= arrL; x++)
 {
 putchar(strArr[x]);
 }
+return (0); 
 }
