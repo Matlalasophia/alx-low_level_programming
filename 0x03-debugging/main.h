@@ -4,5 +4,5 @@
 /**
 * positive_or_negative - tests function that prints if int i is positive or negative
 */
-int positive_or_negative(int i)
+void positive_or_negative(int i)
 #endif /* MAIN_H */
