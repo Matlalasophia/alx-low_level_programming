@@ -1,33 +1,13 @@
-#include<stdio.h>
+#include "main.h"
 /**
- * isUpper - uppercase letters
+ * _isupper - uppercase letters
  * @c: char to check
  * Return: 0 or 1
  */
-char isUpper(char c)
+int _isupper(int c)
 {
-if (isupper(c))
-{
-putchar('1');
-putchar('\n');
-}
+if (c >= 'A' && c <= 'Z')
+return (1);
 else
-{
-putchar('0');
-putchar('\n');
-}
-return (0);
-}
-
-/**
- * main - uppercase letters
- * Return: 0 or 1
- */
-
-
-int main(void)
-{
-char c = 'a';
-isUpper(c);
 return (0);
 }
