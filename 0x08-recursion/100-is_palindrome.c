@@ -7,10 +7,12 @@
  */
 int is_palindrome(char *s);
 {
-if (*s != '\0')
-{
-is_palindrome(s + 1);
-_putchar (*s);
+int is_palindrome = 0;
+if (n < 2)
+is_palindrome = 0;
+else if (n == 2)
+is_palindrome = 1;
+else if (n == 2)
+is_palindrome = 1;
+return (_is palindrome);
 }
-}
-
