@@ -9,7 +9,7 @@ int is_palindrome(char *s);
 {
 if (*s != '\0')
 {
-is_palindrome(*s);
+is_palindrome(s + 1);
 _putchar (*s);
 }
 }
