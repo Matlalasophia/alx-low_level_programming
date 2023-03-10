@@ -10,7 +10,7 @@ int x = 10;
 int i;
 for (i = 0; i <= x; i++)
 {
-for (alphabet = 'a'; alphabet < 'z'; alphabet++)
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
 _putchar(alphabet);
 }
