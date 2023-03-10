@@ -8,7 +8,7 @@ void print_alphabet_x10(void)
 char alphabet = 'a';
 int x = 10;
 int i;
-for (i = 0; i < x; i++)
+for (i = 0; i <= x; i++)
 {
 for (alphabet = 'a'; alphabet < 'z'; alphabet++)
 {
