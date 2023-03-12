@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _abc - function that computes the absolute value of an integer.
- * @n: the int in queation
- * Return: the abc of the int.
+ * _abs - function that computes the absolute value of an integer.
+ * @n: the int in question
+ * Return: the abs of the int.
  */
-int _abc(int n)
+int _abs(int n)
 {
 if (n >= 0)
 return (n);
