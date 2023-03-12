@@ -5,7 +5,7 @@
  * Return: 1 if char is lowercase, otherwise return 0.
  * @c: print return value
  */
-int _islower(char c)
+int _islower(int c)
 {
 if (c >= 'a' && c <= 'z')
 {
