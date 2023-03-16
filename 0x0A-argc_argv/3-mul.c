@@ -14,7 +14,7 @@ int main(int argc, const char *argv[])
 int sum;
 if (argc == 1 || argc == 2)
 {
-printf("%s\n", "error");
+printf("%s\n", "Error");
 return (1);
 }
 else if (argc <= 3)
@@ -27,7 +27,7 @@ return (0);
 }
 else
 {
-printf("%s\n", "error");
+printf("%s\n", "Error");
 return (1);
 }
 return (0);
