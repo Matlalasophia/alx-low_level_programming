@@ -11,9 +11,9 @@ char *str_concat(char *s1, char *s2)
 char *conct;
 int i, ci;
 if (s1 == NULL)
-s1 = " ";
-if (s2 == NULL)
-s2 == " ";
+return ('\0');	 
+(s2 == NULL)
+return ('\0');
 i = ci = 0;
 while (s2[ci] != '\0')
 i++;
