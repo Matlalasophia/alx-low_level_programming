@@ -2,6 +2,8 @@
 #include<stdlib.h>
 #include<string.h>
 #include<stdbool.h>
+#include<ctype.h>
+#include<string.h>
 /**
  * main - program that adds positive numbers.
  * @argc: size of arguments
@@ -12,8 +14,9 @@ int main(int argc, const char *argv[])
 {
 int sum = 0;
 int i;
-int b;
-int c;
+int a;
+int strLen;
+char c;
 bool isSymbol = false;
 if (argc == 1)
 {
@@ -27,21 +30,11 @@ if (argc >= 3)
 {
 for (i = 1; i < argc ; i++)
 {
-for (c = 33; c <= 47; c++)
+strLen = strlen(argv[i]);
+for (a = 0;  strLen > a; a++)
 {
-if (*argv[i] != c)
-{
-continue;
-}
-else
-{
-isSymbol = true;
-break;
-}
-}
-for (c = 58; c <= 126; c++)
-{
-if (*argv[i] != c)
+c = argv[i][a];
+if (isdigit(c))
 {
 continue;
 }
@@ -50,28 +43,16 @@ else
 isSymbol = true;
 break;
 }
-}
-continue;
 }
 if (isSymbol)
 {
 printf("%s\n", "Error");
 return (1);
+break;
 }
-else
-{
-for (i = 1; i < argc ; i++)
-{
-for (b = 48; b <= 57; b++)
-{
-if (*argv[i] == b)
-{
 sum = sum + atoi(argv[i]);
 }
-}
-}
 printf("%d\n", sum);
-}
 }
 return (0);
 }
