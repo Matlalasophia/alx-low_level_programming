@@ -1,0 +1,52 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+/**
+ * main - program that adds positive numbers.
+ * @argc: size of arguments
+ * @argv: array arguments
+ * Return: 1 if num contains symblos that are not digits, print Erro.
+ */
+int main(int argc, const char *argv[])
+{
+int sum;
+int i;
+int a;
+int x1;
+int x2;
+if (argc == 1)
+{
+printf("%s\n", "0");
+}
+
+if (argc == 2)
+{
+printf("%s\n", "Error");
+}
+
+if (argc == 3){
+	 x1 = *argv[1];
+	 x2 = *argv[2];
+	for (i = 48;i <= 57;i++){
+		if(x1 == i){
+			for (a=48;a<=57;a++){
+				if(x2 == a){
+					int num1 = atoi(argv[1]);
+					int num2 = atoi(argv[2]);
+					sum = num1 + num2;
+					printf("%d\n", sum);
+				}else{
+					break;
+                        	printf("%s\n", "Error");
+				}
+			}
+		}else{
+		printf("%s\n", "Error");
+		}
+	}
+
+
+}
+
+return (0);
+}
