@@ -42,7 +42,7 @@ break;
 if (isSymbol)
 {
 printf("%s\n", "Error");
-return (1);
+return(1);
 break;
 }
 sum = sum + atoi(argv[i]);
