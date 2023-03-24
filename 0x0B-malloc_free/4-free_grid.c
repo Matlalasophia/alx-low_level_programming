@@ -6,7 +6,7 @@
  * created by alloc_grid()
  * @grid: grid to free
  * @height: height of the grid
- * Return: Always Success
+ * Return: Nothing 
  */
 void free_grid(int **grid, int height)
 {
