@@ -24,7 +24,11 @@ if (j != n)
 {
 if ( sum <= 9)
 {
+if(i * j+1 > 9){
+printf("%d,  ",sum);
+} else {
 printf("%d,   ",sum);
+}
 }
 else if(sum > 9 && sum <= 99) 
 {
