@@ -5,14 +5,13 @@
  */
 void print_alphabet_x10(void)
 {
-char alphabet = 'a';
-int x = 9;
 int i;
-for (i = 0; i <= x; i++)
+char j;
+for (i = 1; i <= 10; i++)
 {
-for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+for (j = 'a'; j <= 'z'; j++)
 {
-_putchar(alphabet);
+_putchar(j);
 }
 _putchar('\n');
 }
