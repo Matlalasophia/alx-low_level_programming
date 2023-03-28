@@ -24,21 +24,26 @@ if (j != n)
 {
 if ( sum <= 9)
 {
-if(i * j+1 > 9){
-printf("%d,  ",sum);
-} else {
+if(i * j++ > 9)
+{
+printf("%s",",  ");
+printf("%d",sum);
+}
+else
+{
 printf("%d,   ",sum);
 }
 }
 else if(sum > 9 && sum <= 99) 
 {
-printf("%d",sum);
-
-if (i * j+1 > 99){
+if (i * j++ > 99){
 printf("%s",", ");
+printf("%d",sum);
 }else{
 printf("%s",",  ");
+printf("%d",sum);
 }
+printf("%d",sum);
 } 
 else if(sum >= 99)
 {
