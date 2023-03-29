@@ -1,62 +1,38 @@
 #include "main.h"
-#include<stdio.h>
 /**
  * print_times_table - prints the times table
- * @n: function parameter
+ * @n:The value of the times table to be printed
  * Return: 0 (Success)
  */
 void print_times_table(int n)
 {
-int i;
-int j;
-int sum;
-if (n > 15 || n < 0)
+int num, mult, prod;
+if (n >= 0 && n <= 15)
 {
+for (num = 0; num <= n; num++)
+{
+_putchar('0');
+for (mult = 1; mult <= n; mult++)
+{
+_putchar(',');
+_putchar(' ');
+prod = num * mult;
+if (prod <= 99)
+_putchar(' ');
+if (prod <= 9)
+_putchar(' ');
+if (prod >= 100)
+{
+_putchar((prod / 100) + '0');
+_putchar(((prod / 10)) % 10 + '0');
 }
-else
+else if (prod <= 99 && prod >= 10)
 {
-for (i = 0; i <= n; i++)
-{
-for (j = 0; j <= n; j++)
-{
-sum  = i * j;
-if (j != n)
-{
-if ( sum <= 9)
-{
-if(i * j++ > 9)
-{
-printf("%s",",  ");
-printf("%d",sum);
+_putchar((prod / 10) + '0');
 }
-else
-{
-printf("%d,   ",sum);
+_putchar((prod % 10) + '0');
 }
-}
-else if(sum > 9 && sum <= 99) 
-{
-if (i * j++ > 99){
-printf("%s",", ");
-printf("%d",sum);
-}else{
-printf("%s",",  ");
-printf("%d",sum);
-}
-printf("%d",sum);
-} 
-else if(sum >= 99)
-{
-printf("%d", sum);
-printf("%s",", ");
-}
-}
-if(j == n )
-{
-printf("%d", sum);
-}
-}
-printf("\n");
+_putchar('\n');
 }
 }
 }
