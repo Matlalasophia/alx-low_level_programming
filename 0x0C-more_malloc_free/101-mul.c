@@ -1,32 +1,36 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * main - multiples two positive numbers
- * @argc: n arguments
- * @argv: args
- * Return: int
+ * main - prints the minimum number of coins to
+ * make change for an amount of money
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: 0(Success), 1 (Error)
  */
 int main(int argc, char *argv[])
 {
-unsigned long mul;
-int i, j;
-if (argc != 3)
+int num, j, result;
+int coins[] = {25, 10, 5, 2, 1};
+if (argc != 2)
 {
 printf("Error\n");
-exit(98);
+return (1);
 }
-for (i = 1; i < argc; i++)
+num = atoi(argv[1]);
+result = 0;
+if (num < 0)
 {
-for (j = 0; argv[i][j] != '\0'; j++)
+printf("0\n");
+return (0);
+}
+for (j = 0; j < 5 && num >= 0; j++)
 {
-if (argv[i][j] > 57 || argv[i][j] < 48)
+while (num >= coins[j])
 {
-printf("Error\n");
-exit(98);
+result++;
+num -= coins[j];
 }
 }
-}
-mul = atoi(argv[1]) * atoi(argv[2]);
-printf("%lu\n", mul);
+printf("%d\n", result);
 return (0);
 }
