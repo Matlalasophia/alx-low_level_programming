@@ -9,28 +9,25 @@
  */
 int main(int argc, char *argv[])
 {
-int num, j, result;
-int coins[] = {25, 10, 5, 2, 1};
-if (argc != 2)
+unsigned long mul;
+int i, j;
+if (argc != 3)
 {
 printf("Error\n");
-return (1);
+exit(98);
 }
-num = atoi(argv[1]);
-result = 0;
-if (num < 0)
+for (i = 1; i < argc; i++)
 {
-printf("0\n");
-return (0);
-}
-for (j = 0; j < 5 && num >= 0; j++)
+for (j = 0; argv[i][j] != '\0'; j++)
 {
-while (num >= coins[j])
+if (argv[i][j] > 57 || argv[i][j] < 48)
 {
-result++;
-num -= coins[j];
+printf("Error\n");
+exit(98);
 }
 }
-printf("%d\n", result);
+}
+mul = atoi(argv[1]) * atoi(argv[2]);
+printf("%lu\n", mul);
 return (0);
 }
