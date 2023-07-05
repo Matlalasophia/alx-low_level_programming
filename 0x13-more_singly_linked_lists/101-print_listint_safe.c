@@ -32,7 +32,6 @@ size_t nnodes = 0;
 listp_t *hptr, *new, *add;
 hptr = NULL;
 while (head != NULL)
-while (head != NULL)
 {
 new = malloc(sizeof(listp_t));
 if (new == NULL)
