@@ -32,6 +32,7 @@ size_t nnodes = 0;
 listp_t *hptr, *new, *add;
 hptr = NULL;
 while (head != NULL)
+while (head != NULL)
 {
 new = malloc(sizeof(listp_t));
 if (new == NULL)
@@ -45,7 +46,7 @@ while (add->next != NULL)
 add = add->next;
 if (head == add->p)
 {
-printf(" -> [%p] %d\n", (void *)head, head->n);
+printf("-> [%p] %d\n", (void *)head, head->n);
 free_listp(&hptr);
 return (nnodes);
 }
@@ -54,7 +55,7 @@ printf("[%p] %d\n", (void *)head, head->n);
 head = head->next;
 nnodes++;
 }
-free listp(&hptr);
+free_listp(&hptr);
 return (nnodes);
 }
 
